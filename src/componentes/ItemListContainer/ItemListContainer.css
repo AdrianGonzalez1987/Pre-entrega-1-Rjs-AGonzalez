@@ -1,0 +1,9 @@
+.list_container{
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+.list_container_title{
+    color:red;
+  }
+  
