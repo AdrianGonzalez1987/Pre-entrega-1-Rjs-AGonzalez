@@ -1,0 +1,36 @@
+[
+    
+    {
+        "id": 1,
+        "nombre": "insulina",
+        "precio": 50,
+        "img": "https://via.placeholder.com/110",
+        " cantidad": 1 ,
+        "descripcion": "Lorem ipsum..."
+    },
+    {
+        " id": 2,
+        "nombre": "menformina",
+        "precio": 100,
+        "img":"https://via.placeholder.com/110",
+        "cantidad": 1,
+        "descripcion": "Lorem ipsum..."
+    },
+    {
+        "id": 3,
+        "nombre": "reactivos",
+        " precio": 150,
+        "img":"https://via.placeholder.com/110",
+        "cantidad": 1,
+        "descripcion": "Lorem ipsum..."
+    },
+    {
+        "id": 4,
+        "nombre": "saturometro",
+        "precio": 200,
+        "img":"https://via.placeholder.com/110",
+        "cantidad": 1,
+        "descripcion": "Lorem ipsum..."
+
+    }
+]

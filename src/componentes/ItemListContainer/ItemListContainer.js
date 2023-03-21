@@ -8,9 +8,8 @@ const ItemListContainer = ({greeting}) => {
         <div className="list_container">
             <h2 className="list_container_title">BIENVENIDOS</h2>
             <hr/>
-            <div className='d-flex justify-content-between'> 
-                <CardBuy/>
-                <CardBuy/>
+            
+            <div className='flex-direction-wrap m-2'> 
                 <CardBuy/>
             </div>
             <hr/>
