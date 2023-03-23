@@ -9,7 +9,7 @@ const ItemListContainer = ({greeting}) => {
             <h2 className="list_container_title">BIENVENIDOS</h2>
             <hr/>
             
-            <div > 
+            <div className='m-2'> 
                 <CardBuy/>
             </div>
             <hr/>

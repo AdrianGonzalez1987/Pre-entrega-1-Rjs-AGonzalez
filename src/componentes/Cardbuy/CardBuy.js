@@ -8,19 +8,32 @@ import { pedirDatos } from '../../helpers/pedirDatos';
 const CardBuy = () => {
 
     const [productos, setProductos] = useState([])
+    const [loading, setLoading] = useState(true)
     useEffect(() => {
+        
+        setLoading(true)
+
         pedirDatos()
             .then((res) => {
                 setProductos(res)
-            })
+                 setLoading(false)
             .catch((error) => {
                 console.log(error)
+                setLoading(false)
+            })
+            .finally(() => {
+               
+            })
             })
     }, [])
 
     return (
-    <div className = 'd-flex flex-wrap'> {productos.map((prod) => (
-        <div key = {prod.id} className = 'm-1' >
+    <div className='Container'>   
+    {
+        loading
+            ? <h2>CARGANDO...</h2>
+            : <div className = 'd-flex flex-wrap'> {productos.map((prod) => (
+        <div key = {prod.id} className = 'p-2' >
             <Card style={{ width: '15rem' }}>
                 <Card.Img variant="top" src='https://via.placeholder.com/110' />
                 <Card.Body>
@@ -38,7 +51,9 @@ const CardBuy = () => {
     ))}
     
     </div>
+    }
     
+    </div> 
   );
 }
 
