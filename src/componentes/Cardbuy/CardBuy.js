@@ -19,9 +19,9 @@ const CardBuy = () => {
     }, [])
 
     return (
-    <div className = ''> {productos.map((prod) => (
-        <div key = {prod.id} className = 'd-flex row m-2'>
-            <Card style={{ width: '18rem' }}>
+    <div className = 'd-flex flex-wrap'> {productos.map((prod) => (
+        <div key = {prod.id} className = 'm-1' >
+            <Card style={{ width: '15rem' }}>
                 <Card.Img variant="top" src='https://via.placeholder.com/110' />
                 <Card.Body>
                     <Card.Title>{prod.nombre}</Card.Title>
