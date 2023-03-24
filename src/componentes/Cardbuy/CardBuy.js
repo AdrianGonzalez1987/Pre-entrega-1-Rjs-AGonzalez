@@ -40,19 +40,27 @@ const CardBuy = () => {
         loading
             ? <h2>CARGANDO...</h2>
             : <div className = 'd-flex flex-wrap'> {productos.map((prod) => (
-        <div key = {prod.id} className = 'p-2' >
-            <Card style={{ width: '15rem' }}>
+        <div key = {prod.id} className = 'Container p-2' >
+            <Card style={{ width: '15rem', height: '40rem'}}>
                 <Card.Img variant="top" src='https://via.placeholder.com/110' />
                 <Card.Body>
                     <Card.Title>{prod.name}</Card.Title>
-                        <Card.Text>
-                            <p>Descripcion: {prod.description}</p>
-                        </Card.Text>
-                        <p>Cantidad: {prod.stock}</p>
-                        <h3>Precio: {prod.precio}</h3>
+                    <div > {
+                        //<Card.Text className='parCarBuy' >
+                           // <p>Descripcion: {prod.description}</p>
+                        //</Card.Text>
+                        }
+                    </div>
+                    </Card.Body>
+                    <div className='align-content-flex-end p-3'>
+                    <p>Cantidad: {prod.stock}</p>
+                        <h3>Precio: {prod.price}</h3> 
+                        <Link to={`/Detalle/${prod.id}`} className='btn btn-primary'>Añadir</Link>
+                    </div>   
+                        
 
-                    <Link to={`/Detalle/${prod.id}`} className='btn btn-primary'>Añadir</Link>
-                </Card.Body>
+                    
+                
             </Card>
         </div>
     ))}
