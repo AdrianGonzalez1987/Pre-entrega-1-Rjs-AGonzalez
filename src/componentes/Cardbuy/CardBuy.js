@@ -32,7 +32,7 @@ const CardBuy = () => {
                  setLoading(false)
             })
             
-    }, [])
+    }, [categoryId])
 
     return (
     <div className='Container'>   
