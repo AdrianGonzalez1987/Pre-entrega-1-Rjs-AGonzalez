@@ -1,36 +1,452 @@
 [
-    
-    {
-        "id": 1,
-        "nombre": "insulina",
-        "precio": 50,
-        "img": "https://via.placeholder.com/110",
-        " cantidad": 1 ,
-        "descripcion": "Lorem ipsum..."
-    },
-    {
-        " id": 2,
-        "nombre": "menformina",
-        "precio": 100,
-        "img":"https://via.placeholder.com/110",
-        "cantidad": 1,
-        "descripcion": "Lorem ipsum..."
-    },
-    {
-        "id": 3,
-        "nombre": "reactivos",
-        " precio": 150,
-        "img":"https://via.placeholder.com/110",
-        "cantidad": 1,
-        "descripcion": "Lorem ipsum..."
-    },
-    {
-        "id": 4,
-        "nombre": "saturometro",
-        "precio": 200,
-        "img":"https://via.placeholder.com/110",
-        "cantidad": 1,
-        "descripcion": "Lorem ipsum..."
-
-    }
+  {
+    "id": 1,
+    "name": "DIPHENHYDRAMINE HYDROCHLORIDE",
+    "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+    "price": 17347,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 35,
+    "category": "grocery"
+  },
+  {
+    "id": 2,
+    "name": "paliperidone palmitate",
+    "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+    "price": 15890,
+    "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "stock": 41,
+    "category": "grocery"
+  },
+  {
+    "id": 3,
+    "name": "buprenorphine hydrochloride, naloxone hydrochloride",
+    "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+    "price": 11629,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 23,
+    "category": "drug"
+  },
+  {
+    "id": 4,
+    "name": "Hydrocortisone Acetate",
+    "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
+    "price": 525,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 2,
+    "category": "hydro"
+  },
+  {
+    "id": 5,
+    "name": "Ethyl Alcohol",
+    "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+    "price": 8694,
+    "img": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "stock": 25,
+    "category": "plant"
+  },
+  {
+    "id": 6,
+    "name": "Menthol",
+    "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
+    "price": 11548,
+    "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "stock": 23,
+    "category": "drug"
+  },
+  {
+    "id": 7,
+    "name": "Acetaminophen, Dextromethorphan HBr, Phenylephrine HCl",
+    "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+    "price": 19320,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 11,
+    "category": "grocery"
+  },
+  {
+    "id": 8,
+    "name": "Atenolol",
+    "description": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+    "price": 19804,
+    "img": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "stock": 21,
+    "category": "drug"
+  },
+  {
+    "id": 9,
+    "name": "POTASSIUM CHLORIDE, SODIUM CHLORIDE, CALCIUM CHLORIDE, SODIUM LACTATE, and DEXTROSE MONOHYDRATE",
+    "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+    "price": 11198,
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "stock": 11,
+    "category": "drug"
+  },
+  {
+    "id": 10,
+    "name": "Titanium Dioxide",
+    "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+    "price": 3223,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 18,
+    "category": "hydro"
+  },
+  {
+    "id": 11,
+    "name": "rifampin",
+    "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+    "price": 936,
+    "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "stock": 41,
+    "category": "plant"
+  },
+  {
+    "id": 12,
+    "name": "Aconitinum, silicea",
+    "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+    "price": 18662,
+    "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "stock": 21,
+    "category": "grocery"
+  },
+  {
+    "id": 13,
+    "name": "montelukast sodium",
+    "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+    "price": 11971,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 22,
+    "category": "plant"
+  },
+  {
+    "id": 14,
+    "name": "Dock Yellow",
+    "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+    "price": 5472,
+    "img": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "stock": 38,
+    "category": "grocery"
+  },
+  {
+    "id": 15,
+    "name": "Condurango, Echinacea (Angustifolia), Ginkgo biloba, Hydrastis canadensis, Myrrha, OSHA, Phytolacca decandra, Tabebuia impetiginosa, Propolis,",
+    "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+    "price": 4873,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 15,
+    "category": "hydro"
+  },
+  {
+    "id": 16,
+    "name": "Berberis Populus",
+    "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.",
+    "price": 9002,
+    "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "stock": 27,
+    "category": "plant"
+  },
+  {
+    "id": 17,
+    "name": "Octinoxate and Oxybenzone",
+    "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+    "price": 19615,
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "stock": 17,
+    "category": "grocery"
+  },
+  {
+    "id": 18,
+    "name": "Levothyroxine Sodium",
+    "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+    "price": 19960,
+    "img": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "stock": 46,
+    "category": "hydro"
+  },
+  {
+    "id": 19,
+    "name": "Cedar, Red Juniperus virginiana",
+    "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
+    "price": 12158,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 16,
+    "category": "drug"
+  },
+  {
+    "id": 20,
+    "name": "Bisacodyl",
+    "description": "Fusce consequat. Nulla nisl. Nunc nisl.",
+    "price": 8178,
+    "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "stock": 40,
+    "category": "grocery"
+  },
+  {
+    "id": 21,
+    "name": "GLYCERIN",
+    "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+    "price": 18496,
+    "img": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "stock": 30,
+    "category": "grocery"
+  },
+  {
+    "id": 22,
+    "name": "CAPSAICIN",
+    "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.\n\nPhasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+    "price": 9548,
+    "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "stock": 24,
+    "category": "hydro"
+  },
+  {
+    "id": 23,
+    "name": "Pravastatin Sodium",
+    "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+    "price": 1983,
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "stock": 9,
+    "category": "grocery"
+  },
+  {
+    "id": 24,
+    "name": "ENALAPRIL MALEATE",
+    "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+    "price": 13101,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 47,
+    "category": "drug"
+  },
+  {
+    "id": 25,
+    "name": "dimethicone",
+    "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
+    "price": 15917,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 7,
+    "category": "grocery"
+  },
+  {
+    "id": 26,
+    "name": "Natrum Muriaticum, Ranunculus Bulbosus",
+    "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
+    "price": 11268,
+    "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "stock": 4,
+    "category": "drug"
+  },
+  {
+    "id": 27,
+    "name": "ARNICA MONTANA",
+    "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+    "price": 19195,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 8,
+    "category": "grocery"
+  },
+  {
+    "id": 28,
+    "name": "Octinoxate, Titanium Dioxide, and Zinc Oxide",
+    "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+    "price": 13634,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 5,
+    "category": "oxy"
+  },
+  {
+    "id": 29,
+    "name": "SILICON DIOXIDE",
+    "description": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
+    "price": 524,
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "stock": 4,
+    "category": "grocery"
+  },
+  {
+    "id": 30,
+    "name": "OCTINOXATE, OCTOCRYLENE, and TITANIUM DIOXIDE",
+    "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
+    "price": 5019,
+    "img": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "stock": 29,
+    "category": "drug"
+  },
+  {
+    "id": 31,
+    "name": "HYPERICUM PERFORATUM",
+    "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+    "price": 16003,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 21,
+    "category": "grocery"
+  },
+  {
+    "id": 32,
+    "name": "Titanium Dioxide",
+    "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "price": 1874,
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "stock": 20,
+    "category": "drug"
+  },
+  {
+    "id": 33,
+    "name": "Magnesia phosphorica,",
+    "description": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
+    "price": 2067,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 48,
+    "category": "hydro"
+  },
+  {
+    "id": 34,
+    "name": "SULFUR",
+    "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+    "price": 699,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 18,
+    "category": "grocery"
+  },
+  {
+    "id": 35,
+    "name": "clobazam",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+    "price": 12162,
+    "img": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "stock": 12,
+    "category": "hydro"
+  },
+  {
+    "id": 36,
+    "name": "Levetiracetam",
+    "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
+    "price": 3821,
+    "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "stock": 20,
+    "category": "drug"
+  },
+  {
+    "id": 37,
+    "name": "Melatonin,",
+    "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
+    "price": 2240,
+    "img": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "stock": 40,
+    "category": "grocery"
+  },
+  {
+    "id": 38,
+    "name": "Acetaminophen, Dextromethorphan HBr, Doxylamine succinate",
+    "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+    "price": 12790,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 17,
+    "category": "hydro"
+  },
+  {
+    "id": 39,
+    "name": "Fluoxetine",
+    "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+    "price": 719,
+    "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "stock": 21,
+    "category": "grocery"
+  },
+  {
+    "id": 40,
+    "name": "Nicotine Polacrilex",
+    "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
+    "price": 3105,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 45,
+    "category": "drug"
+  },
+  {
+    "id": 41,
+    "name": "Paroxetine Hydrochloride",
+    "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
+    "price": 19367,
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "stock": 36,
+    "category": "grocery"
+  },
+  {
+    "id": 42,
+    "name": "Organoplex",
+    "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+    "price": 7221,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 13,
+    "category": "drug"
+  },
+  {
+    "id": 43,
+    "name": "metoclopramide hydrochloride",
+    "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.",
+    "price": 4088,
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "stock": 30,
+    "category": "hydro"
+  },
+  {
+    "id": 44,
+    "name": "Olanzapine",
+    "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
+    "price": 12528,
+    "img": "http://dummyimage.com/200x200.png/dddddd/000000",
+    "stock": 39,
+    "category": "plant"
+  },
+  {
+    "id": 45,
+    "name": "Butalbital and Acetaminophen Tablets",
+    "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+    "price": 12847,
+    "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "stock": 41,
+    "category": "plant"
+  },
+  {
+    "id": 46,
+    "name": "Naproxen",
+    "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+    "price": 10324,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 40,
+    "category": "grocery"
+  },
+  {
+    "id": 47,
+    "name": "Benzonatate",
+    "description": "Fusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+    "price": 11938,
+    "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+    "stock": 49,
+    "category": "oxy"
+  },
+  {
+    "id": 48,
+    "name": "Loratadine, Pseudoephedrine",
+    "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+    "price": 9986,
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "stock": 36,
+    "category": "grocery"
+  },
+  {
+    "id": 49,
+    "name": "oxygen",
+    "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+    "price": 14793,
+    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+    "stock": 2,
+    "category": "grocery"
+  },
+  {
+    "id": 50,
+    "name": "Dextrose (glucose), Levulose (fructose), Phosphoric Acid",
+    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+    "price": 12092,
+    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+    "stock": 11,
+    "category": "plant"
+  }
 ]

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { pedirDatos } from '../../helpers/pedirDatos';
+import { useParams } from 'react-router-dom'
 
 
 
@@ -9,22 +10,28 @@ const CardBuy = () => {
 
     const [productos, setProductos] = useState([])
     const [loading, setLoading] = useState(true)
+    const {categoryId} = useParams()
     useEffect(() => {
         
         setLoading(true)
 
         pedirDatos()
             .then((res) => {
-                setProductos(res)
-                 setLoading(false)
+                if (categoryId){
+                    setProductos(res.filter((prod) => prod.category === categoryId))
+                } else {
+                    setProductos(res)
+                }
+                
+            })   
             .catch((error) => {
                 console.log(error)
-                setLoading(false)
+                
             })
             .finally(() => {
-               
+                 setLoading(false)
             })
-            })
+            
     }, [])
 
     return (
@@ -37,11 +44,11 @@ const CardBuy = () => {
             <Card style={{ width: '15rem' }}>
                 <Card.Img variant="top" src='https://via.placeholder.com/110' />
                 <Card.Body>
-                    <Card.Title>{prod.nombre}</Card.Title>
+                    <Card.Title>{prod.name}</Card.Title>
                         <Card.Text>
-                            <p>Descripcion: {prod.descripcion}</p>
+                            <p>Descripcion: {prod.description}</p>
                         </Card.Text>
-                        <p>Cantidad: {prod.cantidad}</p>
+                        <p>Cantidad: {prod.stock}</p>
                         <h3>Precio: {prod.precio}</h3>
 
                     <Button variant="primary">Añadir</Button>

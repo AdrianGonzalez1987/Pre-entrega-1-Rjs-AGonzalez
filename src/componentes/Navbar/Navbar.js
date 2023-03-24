@@ -2,6 +2,7 @@
 import './Navbar.scss';
 import logo from './logo.png'
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
     return (
@@ -13,9 +14,9 @@ export const Navbar = () => {
                 </div>
 
                 <nav className="navbar" >
-                    <p className="navbar_menu">Patillas </p>
-                    <p className="navbar_menu">inyecciones </p>
-                    <p className="navbar_menu">Cremas</p>
+                    <Link to='/' className="navbar_menu"> INICIO </Link>
+                    <Link to='/Productos' className="navbar_menu"> PRODUCTOS </Link>
+                    <Link to='/Contacto' className="navbar_menu"> CONTACTO </Link>
                 </nav>
                 <CartWidget />
             </div>

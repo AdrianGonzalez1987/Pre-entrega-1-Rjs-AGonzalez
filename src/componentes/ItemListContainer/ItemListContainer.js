@@ -3,7 +3,12 @@ import './ItemListContainer.css'
 import { Button } from 'react-bootstrap'
 import CardBuy from '../Cardbuy/CardBuy'
 
+
 const ItemListContainer = ({greeting}) => {
+
+    
+   
+
     return(
         <div className="list_container">
             <h2 className="list_container_title">BIENVENIDOS</h2>
