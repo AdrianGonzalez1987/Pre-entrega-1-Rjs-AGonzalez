@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import Button from 'react-bootstrap/Button';
+
 import Card from 'react-bootstrap/Card';
 import { pedirDatos } from '../../helpers/pedirDatos';
 import { useParams } from 'react-router-dom'
-
+import { Link } from 'react-router-dom';
 
 
 const CardBuy = () => {
@@ -51,7 +51,7 @@ const CardBuy = () => {
                         <p>Cantidad: {prod.stock}</p>
                         <h3>Precio: {prod.precio}</h3>
 
-                    <Button variant="primary">Añadir</Button>
+                    <Link to={`/Detalle/${prod.id}`} className='btn btn-primary'>Añadir</Link>
                 </Card.Body>
             </Card>
         </div>
