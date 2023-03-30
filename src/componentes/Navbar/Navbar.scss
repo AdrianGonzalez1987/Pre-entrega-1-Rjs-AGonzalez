@@ -55,6 +55,14 @@
                 box-shadow: 0 1rem 1rem rgba(45, 7, 70, 0.555);
                 backdrop-filter: blur(10px);
             }
+            .navbar_menu_desple{
+                font-size: 20px;
+                background-color: purple;
+                text-transform: uppercase;
+                cursor: pointer;
+                font-weight: 700;
+                color: white;
+            }
         }    
     }
 }
