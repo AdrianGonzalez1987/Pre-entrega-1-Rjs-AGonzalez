@@ -54,6 +54,7 @@ const CardBuy = () => {
                     </Card.Body>
                     <div className='align-content-flex-end p-3'>
                     <p>Cantidad: {prod.stock}</p>
+                    <p>Categoria: {prod.category}</p>
                         <h3>Precio: {prod.price}</h3> 
                         <Link to={`/Detalle/${prod.id}`} className='btn btn-primary'>Añadir</Link>
                     </div>   

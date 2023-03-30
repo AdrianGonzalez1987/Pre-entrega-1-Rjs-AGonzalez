@@ -4,7 +4,7 @@ import logo from './logo.png'
 import CartWidget from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Nav from 'react-bootstrap/Nav';
+
 
 export const Navbar = () => {
     return (
@@ -18,10 +18,12 @@ export const Navbar = () => {
                 <nav className="navbar" >
                     <Link to='/' className="navbar_menu"> INICIO </Link>
                     <NavDropdown title="PRODUCTOS" className="navbar_menu">
-                        <Nav.Link to='/Productos' className="navbar_menu_desple"> TODOS </Nav.Link>
-                        <Nav.Link to='/Productos/hydro' className="navbar_menu_desple"> HYDRO </Nav.Link>
-                        <Nav.Link to='/Productos/grocery' className="navbar_menu_desple"> GROCERY </Nav.Link>
-                        <Nav.Link to='/Productos/drug' className="navbar_menu_desple"> DRUG </Nav.Link>
+                        <li>
+                        <ul><Link to='/Productos' className="navbar_menu_desple"> TODOS </Link></ul>
+                        <ul><Link to='/Productos/hydro' className="navbar_menu_desple"> HYDRO </Link></ul>
+                        <ul><Link to='/Productos/grocery' className="navbar_menu_desple"> GROCERY </Link></ul>
+                        <ul><Link to='/Productos/drug' className="navbar_menu_desple"> DRUG </Link> </ul>
+                        </li>
                     </NavDropdown>
                     <Link to='/Contacto' className="navbar_menu"> CONTACTO </Link>
                 </nav>
