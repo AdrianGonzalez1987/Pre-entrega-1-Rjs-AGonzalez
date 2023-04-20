@@ -1,13 +1,18 @@
 import { IoCartOutline } from "react-icons/io5";
 import './CartWidget.scss';
+import { useContext } from "react";
+import { CardContex } from "../../context/CardContex";
+import { Link } from 'react-router-dom'
 
 const CartWidget = () => {
+    
+    const { totalCantidad } = useContext(CardContex)
 
     return(
-        <div className='cart-widget'>
+        <Link to="/Cart" className='cart-widget'>
             <IoCartOutline className="cart-icon" />
-            <span>0</span>
-        </div>
+            <span> {totalCantidad()} </span>
+        </Link>
     )
 }
 

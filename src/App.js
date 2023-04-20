@@ -9,13 +9,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemDetailsContainer from './componentes/ItemDetailsContainer/ItemDetailsContainer';
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { CartProvider } from './context/CardContex';
+import  Cart  from './componentes/Cart/Cart'
+
 
 
 function App() {
 
+  
   return ( 
+  
+    <CartProvider> 
 
-    <BrowserRouter className="App">
+      <BrowserRouter className="App">
           
       <Navbar />
   
@@ -24,12 +30,16 @@ function App() {
         <Route path='/Productos' element={<ItemListContainer /> }/>
         <Route path='/Productos/:categoryId' element={<ItemListContainer /> }/>
         <Route path='/Detalle/:itemId' element = {<ItemDetailsContainer/>} />
+        <Route path='/Cart' element={<Cart />}/>
         <Route path='/Contacto' element={ <Contacto /> }/>
         <Route path='*' element={ <Navigate to={"/"} /> }/>
       </Routes>
     
-    </BrowserRouter>
-   
+      </BrowserRouter>
+
+    </CartProvider>
+      
+    
   );
 }
 
