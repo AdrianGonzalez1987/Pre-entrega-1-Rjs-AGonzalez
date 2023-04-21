@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-
 import Card from 'react-bootstrap/Card';
-import { pedirDatos } from '../../helpers/pedirDatos';
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom';
 import Loader from "../Loader/Loader";
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import {db} from '../../firebase/config'
 
 const CardBuy = () => {
 
@@ -16,6 +16,8 @@ const CardBuy = () => {
         //setCantidad(true)
         setLoading(true)
 
+        /*//esto se sustitulle por el firestore
+        import { pedirDatos } from '../../helpers/pedirDatos';
         pedirDatos()
             .then((res) => {
                 if (categoryId){
@@ -34,7 +36,25 @@ const CardBuy = () => {
                  //setCantidad(false && true)
                  
             })
-            
+        */    
+
+        // 1-. armar referencia (proceso sincronico) importamos la db
+            const productosRef = collection(db,"productos")
+            const q = categoryId
+                    ?  query(productosRef, where("category", "==", categoryId))
+                    :  productosRef
+        // 2-. llamar a esa referencia|| pedimos los datos de la db
+            getDocs(q)
+                .then((resp) => {
+                    setProductos(resp.docs.map((doc) => { 
+                        return  {
+                                    id:doc.id,
+                                    ...doc.data()
+                                } 
+                        }))
+                })
+                .finally(() => setLoading(false))
+
     }, [categoryId])
 
     return (
@@ -45,7 +65,7 @@ const CardBuy = () => {
             : <div className = 'd-flex flex-wrap'> {productos.map((prod) => (
         <div key = {prod.id} className = 'Container p-2' >
             <Card style={{ width: '15rem', height: '40rem'}}>
-                <Card.Img variant="top" src='https://via.placeholder.com/110' />
+                <Card.Img variant="top" src= {prod.img} />
                 <Card.Body>
                     <Card.Title>{prod.name}</Card.Title>
                     <div > {
@@ -58,6 +78,7 @@ const CardBuy = () => {
                     <div className='align-content-flex-end p-3'>
                         
                         <p>{prod.stock <= 5 && <p><strong>Quedan Solo {prod.stock} Unidades</strong></p>}</p>
+                        <p>Elaborado por: {prod.marca}</p>
                         <p>Categoria: {prod.category}</p>
                         <h3>Precio: {prod.price}</h3> 
                         <Link to={`/Detalle/${prod.id}`} className='btn btn-primary'>Añadir</Link>
