@@ -36,27 +36,30 @@ const ItemDetail = ({item}) => {
         
         <Card  >
             <Card.Header><h2>{item.name}</h2></Card.Header>
-           
+            
             <Card.Body className='row mb-4 md-3'>
                 <div className='col-3'> 
                     <Card.Img  src={item.img} className='imad'/>
+
                 </div>
                 
                 
                 <Card.Text className='row col'>
                     <div className='col-8'>
-                        {item.description}
+                        <p>{item.description}</p>
+                        
                     </div>
                     <div className='col-4 d-flex justify-content-center align-items-center'>
                         
                         {
-                            isInCart(item.id)
-                                ?<Link to="/cart" className="btn btn-success">Terminar Compra</Link>
-                                :<ItemCounts  
-                                    max={item.stock}
-                                    cantidad={cantidad}
-                                    setCantidad={setCantidad}
-                                    agregar={handleAgregar}/>    
+                            
+                              isInCart(item.id)
+                                    ?<Link to="/cart" className="btn btn-success">Terminar Compra</Link>
+                                    :<ItemCounts  
+                                        max={item.stock}
+                                        cantidad={cantidad}
+                                        setCantidad={setCantidad}
+                                        agregar={handleAgregar}/>    
                         }
                             
                         

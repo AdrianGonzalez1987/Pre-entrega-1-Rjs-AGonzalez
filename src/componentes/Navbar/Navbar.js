@@ -7,6 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 export const Navbar = () => {
+    
     return (
         <header className="header sticky-top">
             <div className="header_container">

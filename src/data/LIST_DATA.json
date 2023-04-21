@@ -5,7 +5,7 @@
     "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
     "price": 17347,
     "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
-    "stock": 35,
+    "stock": 20,
     "category": "grocery"
   },
   {
@@ -14,7 +14,7 @@
     "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
     "price": 15890,
     "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
-    "stock": 41,
+    "stock": 10,
     "category": "grocery"
   },
   {
@@ -23,7 +23,7 @@
     "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
     "price": 11629,
     "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
-    "stock": 23,
+    "stock": 9,
     "category": "drug"
   },
   {
@@ -41,7 +41,7 @@
     "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
     "price": 8694,
     "img": "http://dummyimage.com/200x200.png/dddddd/000000",
-    "stock": 25,
+    "stock": 15,
     "category": "plant"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
     "price": 11548,
     "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
-    "stock": 23,
+    "stock": 10,
     "category": "drug"
   },
   {

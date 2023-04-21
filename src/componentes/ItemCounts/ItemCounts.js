@@ -1,7 +1,7 @@
 
 import Button from 'react-bootstrap/Button';
 
-const ItemCounts = ({max, cantidad, setCantidad,agregar}) => {
+const ItemCounts = ({max, cantidad, setCantidad,agregar,stock}) => {
    
     
     const handleRestar = () => {
@@ -22,9 +22,27 @@ const ItemCounts = ({max, cantidad, setCantidad,agregar}) => {
 
     return (
         <div >
-            <button onClick = {handleRestar} className="btn btn-outline-primary"> - </button>
+            
+            <button 
+                onClick={handleRestar} 
+                className={`btn 
+                ${cantidad === 1 ? 'minimo' : ''} 
+                ${cantidad === 1 ? 'btn-outline-danger' : 'btn-outline-primary'}`}
+                disabled={cantidad === 1 || stock === 0}
+            >
+                -
+            </button>
+
             <span className="mx-3">{cantidad}</span>
-            <button onClick = {handleSumar} className="btn btn-primary"> + </button>
+
+            <button 
+                onClick={handleSumar} 
+                className={cantidad === stock ? "btn btn-danger" : "btn btn-primary"}
+                disabled={cantidad === stock || stock === 0}
+            >
+                +
+            </button>
+
             <br/>
             <Button onClick={agregar} className=" mx-2 mt-2" variant="primary" >AGREGAR</Button>
 
