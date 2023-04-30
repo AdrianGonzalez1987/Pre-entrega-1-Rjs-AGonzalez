@@ -1,7 +1,7 @@
 import { useContext, useState } from "react"
 import { CardContex } from "../../context/CardContex"
-import { Navigate } from "react-router"
-import { collection,addDoc } from "firebase/firestore"
+import {  Navigate } from "react-router"
+import { writeBatch, collection,addDoc, getDocs, query, where, documentId } from "firebase/firestore"
 import { db } from "../../firebase/config"
 
 
@@ -25,7 +25,7 @@ const Checkout = () => {
 
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         // validaciones
         if(values.nombre.length < 3){
@@ -48,13 +48,56 @@ const Checkout = () => {
             total: totalCarrito(),
             fyh: new Date()
         }
+        const batch = writeBatch(db)
+
         const ordersRef = collection(db, "orders")
 
-        addDoc(ordersRef, orden)
-            .then((doc) => {
-                setOrderId(doc.id)
-                vaciarCarrito()
-            })
+        const productosRef = collection(db, "productos")
+
+        const q = query(productosRef, where(documentId(), "in", cart.map(item => item.id) ))
+
+        const outOsStock =[]
+
+        const productos = await getDocs(q)
+
+        productos.docs.forEach((doc) => {
+            const item = cart.find((prod) => prod.id === doc.id)
+
+            if(doc.data().stock >= item.cantidad) {
+                batch.update(doc.ref, {
+                    stock: doc.data().stock - item.cantidad
+                })
+            } else {
+                outOsStock.push(item)
+            }
+        })
+
+        if (outOsStock.length === 0) {
+            // VARIANTE RESUMIDA
+            await batch.commit()
+            const {id} = await addDoc(ordersRef, orden)
+            setOrderId(id)
+            vaciarCarrito()
+            // VARIANTE CLASICA
+            // batch.commit()
+            //     .then(() => {
+            //         addDoc(ordersRef, orden)
+            //             .then((doc) => {
+            //                 setOrderId(doc.id)
+            //                 vaciarCarrito()
+            //             })
+            //     })
+        } else {
+            alert ("hay items sin stock: " + outOsStock.map(i => i.name).join(', ')) //mejorar esta alerta
+        }
+
+      
+
+        // addDoc(ordersRef, orden)
+        //     .then((doc) => {
+        //         setOrderId(doc.id)
+        //         vaciarCarrito()
+        //     })
         //console.log(order)
     }
 
@@ -110,3 +153,24 @@ const Checkout = () => {
 }
 
 export default Checkout
+
+  // cart.forEach((item) => {
+        //     console.log(item)
+        //     const docRef = doc(db, "productos", item.id)
+
+        //     getDoc(docRef)   //optengo el documento
+
+        //         .then((doc) => {
+        //             let stock = doc.data().stock
+        //             if (stock - item.cantidad >= 0){
+        //                 updateDoc(docRef, {   //optenido el doc, puedo modificarlo o actualizarlo 
+        //                 stock: doc.data().stock - item.cantidad
+        //                 })
+        //             } else {
+        //                 alert("el producto" + doc.data().name + "esta agotado")
+        //             }
+                    
+        //         })
+
+            
+        // });
